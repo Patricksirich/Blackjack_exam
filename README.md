@@ -9,7 +9,7 @@
 I have decided to create the project for assignment 2 - Blackjack - I have decided to do this project as I thought it would be a fun and challenging project to create. Creating a game of blackjack requires a great structure and logical thinking, making this the perfect choice for me.
 
 I have set it all up in a single file called Blackjack.py as it is a small project and the readability is in my opinion better this way than if I had set it up following OOP. 
-### To run the project you have to type in "python Blackjack.py" in the terminal and then follow the instructions in the terminal.
+#### To run the project you have to type in "python Blackjack.py" in the terminal and then follow the instructions in the terminal.
 
 My focus during the development was making the code as effective as possible by creating reusable functions that would make the execution order of the code as easy as possible. This can be seen in the game_rules() function that consists primarily of the other functions but just determines the order of execution. 
 
