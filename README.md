@@ -1,4 +1,4 @@
 # Blackjack exam
 
-##By Patrick Sirich
-##Python 2
+#By Patrick Sirich
+#Python 2
