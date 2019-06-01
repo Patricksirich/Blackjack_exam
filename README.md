@@ -16,4 +16,4 @@ My focus during the development was making the code as effective as possible by 
 ## Unit_test.py consists all of the unittests (12) that I have created for this project.
 ### To run the unittests type "python -m unittest unit_test.py" in the terminal - if all goes well it will return "Ran 12 tests in x.xxxs OK"
 
-My unittests consists of 12 unittests that tests the different functions. I have decided not to run unittests on game_rules() and start_game() as these two functions consists primarily of functions that have already been tested.
+My project consists of 12 unittests that tests the different functions. I have decided not to run unittests on game_rules() and start_game() as these two functions consists primarily of functions that have already been tested.
