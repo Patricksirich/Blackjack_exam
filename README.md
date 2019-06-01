@@ -2,7 +2,9 @@
 > By Patrick Sirich - Python Elective 2019 - Python2
 
 ## Introduction to the project
-### The description for the project that I have decided to make can be found here: https://github.com/python-elective-2-spring-2019/exam/blob/master/assignments/assignment_2.md
+##### The description for the project that I have decided to make can be found here: https://github.com/python-elective-2-spring-2019/exam/blob/master/assignments/assignment_2.md
+
+
 
 I have decided to create the project for assignment 2 - Blackjack - I have decided to do this project as I thought it would be a fun and challenging project to create. Creating a game of blackjack requires a great structure and logical thinking, making this the perfect choice for me.
 
