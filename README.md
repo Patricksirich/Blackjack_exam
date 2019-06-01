@@ -14,6 +14,6 @@ I have set it all up in a single file called Blackjack.py as it is a small proje
 My focus during the development was making the code as effective as possible by creating reusable functions that would make the execution order of the code as easy as possible. This can be seen in the game_rules() function that consists primarily of the other functions but just determines the order of execution. 
 
 ## Unit_test.py consists all of the unittests (12) that I have created for this project.
-### To run the unittests type "python -m unittest unit_test.py" in the terminal - if all goes well it will return "Ran 12 tests in x.xxxs OK"
+#### To run the unittests type "python -m unittest unit_test.py" in the terminal - if all goes well it will return "Ran 12 tests in x.xxxs OK"
 
 My project consists of 12 unittests that tests the different functions. I have decided not to run unittests on game_rules() and start_game() as these two functions consists primarily of functions that have already been tested.
