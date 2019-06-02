@@ -1,6 +1,6 @@
 from random import shuffle
 
-#Our sets for the cards
+#Our lists for the cards
 card_ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']       
 card_suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades']
 #A dictionary translating our cards into the correct values
@@ -12,6 +12,7 @@ deck = []
 #Dealer and players hands
 dealer_cards = []
 player_cards = []
+
 
 #Creates the deck with 52 cards
 def create_deck():
@@ -26,14 +27,14 @@ def create_deck():
 
 #Removes last card from the deck[] and return the value
 def deal():
-    single_card = deck.pop()
-    return single_card
+    return deck.pop()
 
 
 #Checks the card's value so that we can do a sum of the cards in the hand
 def card_value(card_name):
     card_rank = card_name.split(" of ")
     return card_values[card_rank[0]]
+
 
 #Checks whether there is an Ace in the hand and adjusts value
 def check_for_ace(card_name, current_value):    
@@ -61,12 +62,13 @@ def player_deal(player_value_local):
             for i in player_cards:
                 player_value_local += check_for_ace(i, current_value)
 
-            print("Player cards:\n" + ' '.join(player_cards))
+            print("You currently have ", player_value_local, "\n")
+            print("Player cards:\n" + ' '.join(player_cards) + "\n===================================")
             current_value = player_value_local
 
              #Check is sum is over 21
             if player_value_local > 21:
-                print("Player has busted")
+                print("Player has busted\n")
                 playing = False
 
         #If player wish to stand, break the loop    
@@ -91,7 +93,8 @@ def dealer_deal(dealer_value_local):
         #Iterate through dealer_cards and find the value so that we can check the sum of the cards - also checks for aces
         for i in dealer_cards:
             dealer_value_local += check_for_ace(i, current_value)
-        print("Dealer cards:\n" + ' '.join(dealer_cards))
+        print("Dealer has: ", dealer_value_local, "\n")
+        print("Dealer cards:\n" + ' '.join(dealer_cards) + "\n===================================")
         current_value = dealer_value_local
 
     #Return the local variable in the function so that we can change the global variable
@@ -117,7 +120,7 @@ def start_current_game():
     #Iterate through dealer_cards and find the value so that we can check the sum of the cards
     for i in dealer_cards:
         dealer_value_global += card_value(i)
-    print(dealer_cards[0] + "  [HIDDEN CARD]")
+    print(dealer_cards[0] + "  [HIDDEN CARD] + \n===================================")
 
     #Iterate through player_cards and find the value so that we can check the sum of the cards   
     for i in player_cards:
@@ -155,8 +158,6 @@ def start_current_game():
         return "Tie"
     elif dealer_value_global > 21:
         return "Player"
-    else:
-        print("Error: dealer: ", dealer_value_global, " Player: ", player_value_global)
 
 
 #Function that determines the rules of the game
